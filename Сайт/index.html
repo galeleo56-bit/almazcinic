@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Алмазклиник | Бережное исцеление</title>
-    <link rel="stylesheet" href="style.css">
+    
     <!-- Подключаем премиальные шрифты -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
+    
+    <!-- Стили (предполагается, что они в style.css) -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Навигация -->
-    <!-- Навигация с логотипом -->
+    <!-- Навигация: Glassmorphism эффект -->
     <nav class="navbar">
         <div class="nav-container">
             <a href="#" class="nav-logo">
-                <img src="images/logo.png" alt="Логотип" class="nav-logo-img">
+                <img src="images/logo.png" alt="Логотип Алмазклиник" class="nav-logo-img">
                 <span>Алмазклиник</span>
             </a>
             <ul class="nav-links">
@@ -28,8 +32,7 @@
         </div>
     </nav>
 
-
-    <!-- Блок 1: Обложка -->
+    <!-- Блок 1: Hero Section (Анимация входа прописана в CSS через .hero-title и т.д.) -->
     <section class="hero">
         <div class="overlay"></div>
         <div class="hero-content">
@@ -39,8 +42,8 @@
         </div>
     </section>
 
-    <!-- Блок 2: Проблема -->
-    <section id="problem" class="problem-section">
+    <!-- Блок 2: Проблема (Добавлен класс reveal для плавного появления при скролле) -->
+    <section id="problem" class="problem-section reveal">
         <div class="container">
             <h2 class="problem-title">Вы не должны привыкать к боли.</h2>
             <div class="problem-grid">
@@ -60,11 +63,11 @@
         </div>
     </section>
 
-    <!-- Блок 3: О мастере -->
-    <section id="about" class="about-section">
+    <!-- Блок 3: О мастере (Добавлен класс reveal) -->
+    <section id="about" class="about-section reveal">
         <div class="container about-container">
             <div class="about-image">
-                <img src="images/doctor.jpg" alt="Специалист Алмазклиник">
+                <img src="images/doctor.jpg" alt="Специалист Алмазклиник Татьяна Леонидовна">
             </div>
             <div class="about-text">
                 <h2 class="about-title">Ваше тело в надежных руках</h2>
@@ -78,46 +81,43 @@
         </div>
     </section>
 
-<!-- Блок 4: Методы -->
-<section id="methods" class="methods-section">
-    <div class="container">
-        <h2 class="methods-title">Путь к облегчению без стресса для организма</h2>
-        <div class="methods-grid">
-            
-            <!-- Карточка 1 -->
-            <div class="method-card">
-                <div class="method-icon">
-                    <img src="images/icon-diag.png" alt="Диагностика" class="method-img">
+    <!-- Блок 4: Методы (Добавлен класс reveal) -->
+    <section id="methods" class="methods-section reveal">
+        <div class="container">
+            <h2 class="methods-title">Путь к облегчению без стресса для организма</h2>
+            <div class="methods-grid">
+                <!-- Карточка 1 -->
+                <div class="method-card">
+                    <div class="method-icon">
+                        <img src="images/icon-diag.png" alt="Диагностика" class="method-img">
+                    </div>
+                    <h3>Глубокая диагностика</h3>
+                    <p>Мы не лечим симптомы. Мы ищем истинную причину боли, анализируя работу всей системы организма.</p>
                 </div>
-                <h3>Глубокая диагностика</h3>
-                <p>Мы не лечим симптомы. Мы ищем истинную причину боли, анализируя работу всей системы организма.</p>
-            </div>
 
-            <!-- Карточка 2 -->
-            <div class="method-card">
-                <div class="method-icon">
-                    <img src="images/icon-touch.png" alt="Мягкое воздействие" class="method-img">
+                <!-- Карточка 2 -->
+                <div class="method-card">
+                    <div class="method-icon">
+                        <img src="images/icon-touch.png" alt="Мягкое воздействие" class="method-img">
+                    </div>
+                    <h3>Мягкое воздействие</h3>
+                    <p>Никаких резких движений. Работа идет с фасциями и нервной системой через деликатные техники.</p>
                 </div>
-                <h3>Мягкое воздействие</h3>
-                <p>Никаких резких движений. Работа идет с фасциями и нервной системой через деликатные техники.</p>
-            </div>
 
-            <!-- Карточка 3 -->
-            <div class="method-card">
-                <div class="method-icon">
-                    <img src="images/icon-rhythm.png" alt="Индивидуальный ритм" class="method-img">
+                <!-- Карточка 3 -->
+                <div class="method-card">
+                    <div class="method-icon">
+                        <img src="images/icon-rhythm.png" alt="Индивидуальный ритм" class="method-img">
+                    </div>
+                    <h3>Индивидуальный ритм</h3>
+                    <p>Тело само подсказывает темп. Мы работаем в сонастройке с вашими естественными процессами.</p>
                 </div>
-                <h3>Индивидуальный ритм</h3>
-                <p>Тело само подсказывает темп. Мы работаем в сонастройке с вашими естественными процессами.</p>
             </div>
-
         </div>
-    </div>
-</section>
+    </section>
 
-
-    <!-- Блок 5: Цены (Вернули на место) -->
-    <section id="pricing" class="pricing-section">
+    <!-- Блок 5: Цены (Добавлен класс reveal) -->
+    <section id="pricing" class="pricing-section reveal">
         <div class="container">
             <h2 class="section-title">Стоимость услуг</h2>
             <div class="pricing-grid">
@@ -151,13 +151,13 @@
                 </div>
             </div>
             <div class="price-action">
-            <button id="openPrice" class="btn-secondary">Посмотреть полный прайс</button>
+                <button id="openPrice" class="btn-secondary">Посмотреть полный прайс</button>
+            </div>
         </div>
-    </div> <!-- конец .container -->
-</section>
+    </section>
     
-    <!-- Блок 6: Отзывы -->
-    <section class="testimonials-section">
+    <!-- Блок 6: Отзывы (Добавлен класс reveal) -->
+    <section class="testimonials-section reveal">
         <div class="container">
             <h2 class="testimonials-title">Истории исцеления</h2>
             <div class="testimonials-grid">
@@ -177,50 +177,51 @@
         </div>
     </section>
 
-    <!-- Блок 7: Контакты и Карта -->
-    <section id="contact" class="final-contact-section">
+    <!-- Блок 7: Контакты и Карта (Добавлен класс reveal) -->
+    <section id="contact" class="final-contact-section reveal">
         <div class="container">
             <h2 class="final-title">Готовы начать путь к здоровью?</h2>
             <p class="final-subtitle">Просто позвоните нам, и мы подберем удобное для вас время.</p>
             
-<div class="contact-main">
-    <div class="contact-buttons">
-        <a href="tel:+79774006070" class="big-phone-button">+7 (977) 400-60-70</a>
-        <!-- ЗАМЕНИ 'your_username' на свой реальный ник в телеграм -->
-        <a href="https://t.me/+79774006070" class="tg-button">Написать в Telegram</a>
-    </div>
-    <div class="contact-details">
-        <p class="address-item">📍 г. Москва, Митинская д.15</p>
-        <p class="working-hours">Пн — Вс: 10:00 — 20:00</p>
-    </div>
-</div>
+            <div class="contact-main">
+                <div class="contact-buttons">
+                    <a href="tel:+79774006070" class="big-phone-button">+7 (977) 400-60-70</a>
+                    <a href="https://t.me/+79774006070" class="tg-button">Написать в Telegram</a>
+                </div>
+                <div class="contact-details">
+                    <p class="address-item">📍 г. Москва, Митинская д.15</p>
+                    <p class="working-hours">Пн — Вс: 10:00 — 20:00</p>
+                </div>
+            </div>
 
             <div class="map-wrapper">
+                <!-- Google Maps Iframe -->
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2395.456789012345!2d37.369601!3d55.841950!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDUwJzYzLjAiTiAzN8KwMjInXTAuNiJF!5e0!3m2!1sru!2sru!4v1625000000000!5m2!1sru!2sru" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
 
+    <!-- Футер -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2019 Алмазклиник. Профессиональная остеопатия.ИНН 7727401128.Лицензия Л041-01137-77/00343814</p>
+            <p>&copy; 2019 Алмазклиник. Профессиональная остеопатия.</p>
         </div>
     </footer>
-    <!-- Модальное окно с полным прайсом -->
+
+    <!-- Модальное окно с полным прайсом (iOS Style) -->
     <div id="priceModal" class="modal-overlay">
         <div class="modal-container">
             <button class="modal-close">&times;</button>
             <div class="modal-content">
                 <h2 class="modal-title">Детальный прайс-лист</h2>
                 <div id="priceListContainer" class="price-list">
-                    <!-- Сюда JS автоматически вставит услуги из списка -->
+                    <!-- Контент генерируется через JS -->
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Подключаем скрипт ПЕРЕД закрывающим тегом body -->
+    <!-- Подключаем скрипты -->
     <script src="script.js"></script> 
 </body>
 </html>
-
